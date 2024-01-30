@@ -1,0 +1,27 @@
+CreateImageTiles.py
+-------------------
+Estación Joaquín Sorolla (Valencia)
+--images_path "D:\Aicedrone\20230125_Rail\DatosVuelos\P1" --images_file_extension JPG --tile_columns 0.5 --tile_rows 0.5 --output_path "D:\Aicedrone\20230125_Rail\ia\images\tiles"
+
+
+CreateIAPolygonsForRailway.py
+-----------------------------
+Estación Joaquín Sorolla (Valencia)
+--input_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution.shp --input_shapefile_field_idRail id_num --input_shapefile_field_idRailway id_railway --widthForRailway 1.0 --widthForRail 0.4 --object_type_railway railway  --object_type_rail rail --output_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution_sections_20230608_plane.shp
+--input_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution.shp --input_shapefile_field_idRail id_num --input_shapefile_field_idRailway id_railway --widthForRailway 1.0 --widthForRail 0.4 --object_type_railway railway  --object_type_rail rail --output_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution_sections_20230608.shp
+
+--input_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution.shp --input_shapefile_field_idRail id_num --input_shapefile_field_idRailway id_railway --sectionLength 10.0 --sectionWidth 6.0 --sectionsDistance 20.0 --object_type railway --output_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution_sections.shp
+
+CreateSplitLidarPolygonsForRail.py
+-------------------------------------
+--input_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution.shp --input_shapefile_field_idRail id_num --input_shapefile_field_idRailway id_railway --rail_buffer 0.30 --output_path F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\shapefiles_split_rail_point_cloud
+
+CreateSplitLidarPolygonsForRailway.py
+-------------------------------------
+--input_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Centerlines.shp --input_shapefile_field_idRailway railway --railway_buffer 1.5 --output_path F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\shapefiles_split_railway_point_cloud
+
+
+
+CreateCenterlinesForRailway.py
+------------------------------
+--input_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution.shp --input_shapefile_field_idRail id_num --input_shapefile_field_idRailway id_railway --output_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Centerlines.shp
