@@ -3,6 +3,10 @@ CreateImageTiles.py
 Estación Joaquín Sorolla (Valencia)
 --images_path "D:\Aicedrone\20230125_Rail\DatosVuelos\P1" --images_file_extension JPG --tile_columns 0.5 --tile_rows 0.5 --output_path "D:\Aicedrone\20230125_Rail\ia\images\tiles"
 
+CreateSegmentedObjectsWktForOriginalImageFromTiledImages.py
+-----------------------------------------------------------
+Estación Joaquín Sorolla (Valencia)
+--tiles_txt_files_path "D:\Aicedrone\20230125_Rail\ia\images\runs\segment\predict\labels" --tiles_n_columns 2 --tiles_n_rows 2 --output_path "D:\Aicedrone\20230125_Rail\ia\images\results"
 
 CreateIAPolygonsForRailway.py
 -----------------------------
@@ -25,3 +29,4 @@ CreateSplitLidarPolygonsForRailway.py
 CreateCenterlinesForRailway.py
 ------------------------------
 --input_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Restitution.shp --input_shapefile_field_idRail id_num --input_shapefile_field_idRailway id_railway --output_shapefile F:\2022_AICEDRONE\casos_uso\20230125_RAIL\restitucion\20230125_Railway_Centerlines.shp
+
