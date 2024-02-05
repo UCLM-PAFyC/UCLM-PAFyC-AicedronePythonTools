@@ -3,6 +3,11 @@ CreateImageTiles.py
 Estación Joaquín Sorolla (Valencia)
 --images_path "D:\Aicedrone\20230125_Rail\DatosVuelos\P1" --images_file_extension JPG --tile_columns 0.5 --tile_rows 0.5 --output_path "D:\Aicedrone\20230125_Rail\ia\images\tiles"
 
+PredictWktFormat.py
+-------------------
+Estación Joaquín Sorolla (Valencia)
+--model_file "D:\aicedrone\ia\railway\railway.pt" --images_path "D:\aicedrone\20230125_Rail\ia\images\tiles" --images_file_extension JPG  --output_path "D:\Aicedrone\20230125_Rail\ia\images\results"
+
 CreateSegmentedObjectsWktForOriginalImageFromTiledImages.py
 -----------------------------------------------------------
 Estación Joaquín Sorolla (Valencia)
