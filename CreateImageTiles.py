@@ -42,11 +42,13 @@ def createTile(file_path, tile_columns, tile_rows, output_path):
             new_height = floor(height * tile_rows)
         tile_first_row = 0
         tile_row = 1
-        while tile_first_row <= (height - new_height):
+        # while tile_first_row <= (height - new_height):
+        while tile_first_row < height:
             tile_last_row = tile_first_row + new_height
             tile_first_column = 0
             tile_column = 1
-            while tile_first_column <= (width - new_width):
+            # while tile_first_column <= (width - new_width):
+            while tile_first_column < width:
                 tile_last_column = tile_first_column + new_width
                 tile = (tile_first_column, tile_first_row, tile_last_column, tile_last_row)
                 new_img = img.crop(tile)
