@@ -1,0 +1,14 @@
+[Unit]
+Description=Service for ttyACM2
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /home/m600/Python/ttyACM2-8082.py
+WorkingDirectory=/home/m600/Python/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=m600
+
+[Install]
+WantedBy=multi-user.target

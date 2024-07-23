@@ -1,0 +1,11 @@
+[Unit]
+Description=Str2str NTRIP to TCP and File
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/str2str -in ntrip://user:password@ergnss-tr.ign.es:2102/ALBA3M -out tcpcli://localhost:8080 -out file://ntrip%Y%m_%d%h-&M.rtcm
+Restart=always
+User=m600
+
+[Install]
+WantedBy=multi-user.target

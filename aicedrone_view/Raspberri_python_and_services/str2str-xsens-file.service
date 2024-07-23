@@ -1,0 +1,11 @@
+[Unit]
+Description=Str2str From Xsens IMU to save data to file
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/str2str -in serial://ttyS0:115200 -out tcpsvr://localhost:8082 -out file://xsens%Y%m%d%H%M.bin
+Restart=always
+User=m600
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Str2str From Slave2 to save movingbase to file
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/str2str -in tcpcli://localhost:8082 -out file://ubxSlave2%Y%m_%d%h-&M.ubx
+Restart=always
+User=m600
+
+[Install]
+WantedBy=multi-user.target

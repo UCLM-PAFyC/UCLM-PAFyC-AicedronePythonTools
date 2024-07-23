@@ -3,6 +3,10 @@ CreateImageTiles.py
 Estación Joaquín Sorolla (Valencia)
 --images_path "D:\Aicedrone\20230125_Rail\DatosVuelos\P1" --images_file_extension JPG --tile_columns 0.5 --tile_rows 0.5 --output_path "D:\Aicedrone\20230125_Rail\ia\images\tiles"
 
+Circunvalación de Puerto del Rosario (Fuerteventura)
+--images_path "D:\Aicedrone\20230807_Roads\DatosVuelos\images" --images_file_extension JPG --tile_columns 1200 --tile_rows 1200 --output_path "D:\Aicedrone\20230807_Roads\ia\images\tiles"
+
+
 PredictWktFormat.py
 -------------------
 Estación Joaquín Sorolla (Valencia)

@@ -1,0 +1,11 @@
+[Unit]
+Description=Str2str From base to calculate MovingBase and save to file
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/str2str -in tcpcli://localhost:8080 -out tcpcli://localhost:8081 -out tcpcli://localhost:8082 -out file://ubxBase%Y%m_%d%h-&M.ubx
+Restart=always
+User=m600
+
+[Install]
+WantedBy=multi-user.target
