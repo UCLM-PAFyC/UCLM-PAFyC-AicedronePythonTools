@@ -6,6 +6,10 @@ Estación Joaquín Sorolla (Valencia)
 Circunvalación de Puerto del Rosario (Fuerteventura)
 --images_path "D:\Aicedrone\20230807_Roads\DatosVuelos\images" --images_file_extension JPG --tile_columns 1200 --tile_rows 1200 --output_path "D:\Aicedrone\20230807_Roads\ia\images\tiles"
 
+Para HR
+Circunvalación de Puerto del Rosario (Fuerteventura)
+--images_path "D:\Aicedrone\20230807_Roads\DatosVuelos\images" --images_file_extension JPG --tile_columns 256 --tile_rows 256 --output_path "D:\Aicedrone\20230807_Roads\ia\images\tiles_256x256"
+
 
 PredictWktFormat.py
 -------------------
